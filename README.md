@@ -12,17 +12,32 @@ Analyze EV population data to reveal patterns in vehicle types, range, price, an
 
 ## 🔧 Tools Used
 
-- Python, Pandas, Matplotlib, Seaborn, Folium
+- Python (Pandas, Matplotlib, Seaborn, Folium)
+- Jupyter Notebook
 
 ---
 
-## 📈 Visuals Included
+## 🛠️ Data Preprocessing and Cleaning
 
-- Pie chart: EV type distribution  
-- Scatter plot: Range vs MSRP  
-- Bar chart: MSRP by make  
-- Line plot: Range by model year  
-- Folium map: EV locations by make
+- Handled missing values (`Electric Range`, `Base MSRP`, `Postal Code`, `City`, `County`, `Electric Utility`, `2020 Census Tract`, `Legislative District`)  
+- Imputed missing numerical values using **mean** or **mode**  
+- Dropped records with missing geographic coordinates (`Vehicle Location`)
+- Corrected data types (e.g., converting `Postal Code`, `Electric Range`, and `Base MSRP` to integers)
+- Extracted **Latitude** and **Longitude** from geographic "POINT" strings for mapping
+
+---
+
+## 📊 Exploratory Data Analysis (EDA) and Visualizations
+
+This project includes a variety of visualizations to analyze EV trends across vehicle types, pricing, model years, and geographic locations.
+
+### 📈 Visualizations
+
+- 🥧 **Pie Chart**: Distribution of EV types  
+- ⚡ **Scatter Plot**: Electric Range vs. Base MSRP  
+- 🚘 **Bar Chart**: MSRP by Vehicle Make  
+- 📅 **Line Plot**: Electric Range by Model Year  
+- 🗺️ **Folium Map**: EV locations by manufacturer
 
 ---
 
